@@ -166,5 +166,5 @@ def run_flask():
     app.run(host='0.0.0.0', port=5000)
 
 threading.Thread(target=run_flask).start()
-if TOKEN: bot.run(TOKEN)
+if TOKEN = os.getenv("DISCORD_TOKEN")
 else: print("❌ ไม่พบ DISCORD_TOKEN ในตัวแปรสภาพแวดล้อม!")
